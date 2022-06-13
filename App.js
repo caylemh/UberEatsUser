@@ -9,7 +9,7 @@ export default function App() {
       {/* <HomeScreen /> */}
       <RestaurantDetailsScreen />
 
-      <StatusBar style='auto' />
+      <StatusBar style='light' />
     </View>
   );
 }
@@ -19,5 +19,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
+    margin: 0,
+    padding: 0
   },
 });
