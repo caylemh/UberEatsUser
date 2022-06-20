@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         alignItems: 'center',
-        paddingHorizontal: 15
+        paddingHorizontal: 15,
     },
     menuItemName:{
         fontSize: 18,

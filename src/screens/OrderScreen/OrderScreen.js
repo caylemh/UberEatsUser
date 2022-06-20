@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native'
+import { StatusBar } from 'expo-status-bar';
 import React from 'react'
 import OrderListItem from '../../components/OrderListItem/OrderListItem'
 import orders from '../../../assets/data/orders.json'
@@ -15,6 +16,7 @@ const OrderScreen = () => {
         style={{ flex: 1}}
       />
       
+      <StatusBar style='dark' />
     </View>
   )
 }

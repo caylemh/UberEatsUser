@@ -1,9 +1,13 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import styles from './styles';
+import { useNavigation } from '@react-navigation/native'
 
 const MenuItem = ({ dish }) => {
+
+    const navigation = useNavigation();
+
     return(
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Dish', {id: dish.id})}>
             <View style={styles.menuContainer}>
                 <View style={styles.menuText}>
                     <Text style={styles.menuItemName}>{dish.name}</Text>

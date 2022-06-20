@@ -27,7 +27,10 @@ export default styles = StyleSheet.create({
         fontWeight: '700'
     },
     list:{
-        height: '46%'
+        height: '40%',
+        backgroundColor: 'lightgrey',
+        borderTopLeftRadius: '20%',
+        borderTopRightRadius: '20%'
     },
     hr:{
         backgroundColor: 'lightgrey',

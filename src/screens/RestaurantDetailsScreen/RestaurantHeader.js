@@ -3,11 +3,15 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from 'react-native-vector-icons'
 import restaurants from '../../../assets/data/restaurants.json'; 
 import styles from './styles'
+import { useNavigation } from '@react-navigation/native'
 
 const RestaurantHeader = ({restaurant}) => {
+
+    const navigation = useNavigation();
+
     return(
         <View style={styles.screen}>
-            <TouchableOpacity style={styles.iconContainer}>
+            <TouchableOpacity style={styles.iconContainer} onPress={() => navigation.goBack()} >
                 <Ionicons name='arrow-back-circle' size={40} color={'white'} />
             </TouchableOpacity>
             <LinearGradient colors={['rgba(0,0,0,0.8)', 'rgba(0,0,0,0.2)', 'transparent']} style={styles.gradient} />

@@ -1,9 +1,17 @@
 import { View, Text, StatusBar, TouchableOpacity, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import styles from './styles';
 
 const RestaurantItem = ({restaurant}) => {
+
+    const navigation = useNavigation();
+
+    const onPress = () => {
+        navigation.navigate('Restaurant', {id: restaurant.id});
+    }
+
     return(
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={onPress}>
             
             <View style={styles.restaurantContainer}>
                 <View style={styles.imageContainer}>

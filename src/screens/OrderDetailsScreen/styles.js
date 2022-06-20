@@ -10,6 +10,12 @@ const styles = StyleSheet.create({
         position: 'absolute',
         zIndex: 1
     },
+    iconContainer:{
+        position: 'absolute',
+        top: 30,
+        left: 15,
+        zIndex: 2
+    },
     restImage:{
         width:'100%',
         aspectRatio: 5/3,
